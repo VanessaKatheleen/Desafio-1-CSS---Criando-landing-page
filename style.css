@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+  
+html, body {
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Não altera o tamanho da div, considera os valores de padding e margin sem soma-los */
+    display: flex; /* Facilita design e alinhamento dos itens (torna container flexivel) */
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Não foi colocado tamanhao de largura aqui. Pois, quando determinarem os tamanhos dos elementos dentro do body
+    como na sessão 'course-content' dentro do main, o body se ajustará sem sobrar espaços em branco nas laterais dos elementos */
+}
+
+
+/* Estilos para o banner */
+.banner {
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url(imagens/backgroundTOP.png); 
+    background-size: cover; /* Garante que a imagem ocupe todo o espaço do elemento */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; /* Garante que o banner ocupe toda largura da tela */
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 25px 0;
+    border-bottom: 1px solid #33A8DB80;
+    
+    
+}
+
+/* Estilos para o conteúdo do banner */
+.banner-content {
+    width: 510px;
+    height: 393px;
+    top: 56px;
+    left: 465px;
+    opacity: 0px;
+    margin-bottom: 100x;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+p {
+    color: white;
+}
+
+.banner-content p {
+    width: 513px;
+    color: white;
+    margin-top: 0;
+    font-size: 1.254rem;
+    word-break: break-all; /* Quebra as palavras para caberem embaixo das outras na mesma direção dentro do elemento */
+
+}
+
+.banner .banner-content button {
+    color: #31A8DD;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    border-image-slice: 10; /* A imagem de borda será cortada 10 pixels a partir das bordas superior, inferior, esquerda e direita */
+}
+
+/* Estilos para o elemento no qual a imagem da Logo está */
+.logo {
+    width: 268px;
+    height: 268px;
+    margin: auto;
+}
+
+/* Estilos para a imagem Logo */
+#logo {
+    width: 100%; /* Ocupa todo elemento por trás de onde a imagem está */
+    height: 100%;
+    margin-top: 30px;
+    gap: 0px; /* gap só funciona em layouts de grid ou flex */
+    align-items: center;
+    margin: auto;
+    object-fit: contain;
+    border-radius: 50%; /* Arredonda o objeto/imagem/sombra caso os tamanhos de largura e altura sejam iguais */
+    opacity: 0px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box; /* Não altera o tamanho da div, considera os valores de padding e margin sem soma-los */
+}
+
+
+h1 {
+    font-size: 2rem;
+    color:#0d8bc1; /* Define cor do texto */
+    font-weight: bold; /* Define o peso da fonte */
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase; /* Converte o texto para letras maiúsculas */
+    margin-bottom: 15px; /* Define margem inferior */
+}
+
+#course-content h2 {
+    width: 477px;
+    height: 38px;
+    color: #33A8DB;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase; /* Coverte os textos em letras maiúsculas */
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+
+}
+
+/* Estilos para o conteúdo do main */
+#course-content {
+    width: 800px;
+    height: 325px; /* talvez tirar esse comando caso de errado os espaçamentos */
+    margin: 0 auto; /* 'auto' define que as margens direita e esquerda devem ser automaticas */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+
+.modules-list {
+    margin-bottom: 70px;
+}
+
+.modules-list .module {
+    color: white;
+    width: 540px;
+    border-radius: 57px; /* Arredonda os cantos do elemento */
+    border: 1px solid rgba(51, 168, 219, 1); /* Define largura e cor da borda */
+    padding: 16px 127px 16px 127px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    background-color: #252525;
+    box-shadow: inset -2px 6px 4px rgba(0, 0, 0, .6);
+    font-size: 16px;
+    white-space: nowrap; /* Garante que o texto permaneça em uma única linha sem quebra de linha */
+
+}
+
+
+span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    color: rgba(51, 168, 219, 1);
+
+}
+
+.span2 {
+    margin-left: -20px;
+}
+
+.span3 {
+    margin-left: -65px;
+
+}
+
+#course-content p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+#transform-world {
+    height: 560px;
+    background-image: url(imagens/woman-code.jpeg);
+    background-size: cover; /* Define que a imagem cubra todo o elemento */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4); /* Cor de fundo com opacidade */
+    background-blend-mode: multiply; /* Mistura a imagem com a cor */
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    display: flex;
+    box-sizing: border-box;
+}
+
+#transform-world p {
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    max-width: 250px;
+    text-shadow: 3px 2px #33A8DB;
+    padding: 80px 0px 0px 130px;
+}
+
+#professional-challenges {
+    margin-bottom: 75px;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#professional-challenges h2 {
+    width: 800px;
+    text-align: center;
+    color: #33A8DB;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase; /* Coverte os textos em letras maiúsculas */
+    letter-spacing: 5px;
+    white-space: break-spaces; /* Quebra o texto em novos pedaços, mas se ajusta ao container, respeitando os espaços em branco */
+    margin-top: 80px;
+
+}
+
+#professional-challenges p {
+    padding: 20px 170px 70px;
+    font-size: 16px;  
+    
+}
+
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+}
+
+footer .dio-logo {
+    width: 300px;
+    padding-bottom: 0;
+}
+
+footer p {
+    margin-top: 0;
+}
+  
+footer a {
+    color: #33A8DB;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
