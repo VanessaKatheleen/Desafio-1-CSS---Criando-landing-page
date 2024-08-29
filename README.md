@@ -23,7 +23,7 @@ Este projeto foi realizado como parte do desafio de CSS proposto no curso de CSS
 
 ## Como visualizar
 
-Basta abrir o arquivo `index.html` no navegador para visualizar a landing page.
+Basta abrir o arquivo `desafio 1.html` no navegador para visualizar a landing page.
 
 ---
 
