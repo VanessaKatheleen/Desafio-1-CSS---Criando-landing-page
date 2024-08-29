@@ -9,7 +9,7 @@ Neste projeto, desenvolvi uma landing page simples e funcional utilizando HTML e
 ## Funcionalidades
 
 - Layout moderno 
-- Uso de Flexbox e imagens 
+- Uso de Flexbox  
 - Estilização com CSS para melhorar a aparência
 
 ## Tecnologias Utilizadas
@@ -27,4 +27,4 @@ Basta abrir o arquivo `index.html` no navegador para visualizar a landing page.
 
 ---
 
-Este é um marco importante na minha jornada de aprendizado em front-end! 🎉
+Este é um projeto importante na minha jornada de aprendizado em front-end! 🎉
