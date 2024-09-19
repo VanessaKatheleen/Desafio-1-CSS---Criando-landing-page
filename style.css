@@ -185,8 +185,7 @@ span {
     background-image: url(imagens/woman-code.jpeg);
     background-size: cover; /* Define que a imagem cubra todo o elemento */
     background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantém o fundo fixo enquanto o conteúdo do elemento rola pela página, onde o conteúdo parece deslizar sobre o plano de fundo fixo */    background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.4); /* Cor de fundo com opacidade */
     background-blend-mode: multiply; /* Mistura a imagem com a cor */
     border-top: 1px solid #33A8DB80;
